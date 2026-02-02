@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eaf7ef;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: white;
+}
+
+.nav-action a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #2c7a4b;
+}
+
+.nav-action .btn {
+  background: #2c7a4b;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.badge {
+  background: #c7efd9;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 260px;
+  border-radius: 10px;
+}
+.auth-container {
+  width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 5px;
+}
+
+.auth-container p {
+  color: #666;
+  font-size: 14px;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-container button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #2c7a4b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background: #256a40;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #2c7a4b;
+  text-decoration: none;
+}
+
+.dashboard-header {
+  padding: 30px 40px;
+  background: #dff5e7;
+}
+
+.dashboard-cards {
+  padding: 20px 40px;
+}
+
+.big-card {
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.dark-green {
+  background: #0a7a2d;
+}
+
+.light-green {
+  background: #27c30f;
+}
+
+.big-card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.list-section {
+  padding: 20px 40px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  background: #e9fbe8;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.small-btn {
+  background: #2c7a4b;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
