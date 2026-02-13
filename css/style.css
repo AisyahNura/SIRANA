@@ -25,6 +25,27 @@ body {
   border-radius: 6px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* jarak ikon dan teks */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.nav-text {
+  font-size: 14px;
+}
+
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -159,4 +180,60 @@ body {
   border: none;
   padding: 6px 10px;
   border-radius: 6px;
+}
+.form-section {
+  padding: 40px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-green {
+  background: #2c7a4b;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.preview {
+  padding: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.template-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.kop {
+  text-align: center;
+}
+
+.kop h2, .kop h3 {
+  margin: 0;
+}
+
+.template-box {
+  font-family: "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+.template-box table {
+  margin: 10px 0;
 }

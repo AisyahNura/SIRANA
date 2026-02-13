@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buat Undangan | SIRANA KEMBANG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <h3>SIRANA KEMBANG</h3>
+  </div>
+</nav>
+
+<section class="form-section">
+  <h2>Buat Undangan</h2>
+
+  <form id="undanganForm">
+
+    <input type="text" id="kegiatan" placeholder="Kegiatan" required>
+    <input type="text" id="tempat" placeholder="Tempat" required>
+
+    <div class="row">
+      <input type="date" id="tanggal" required>
+      <input type="time" id="waktu" required>
+    </div>
+
+    <input type="text" id="peserta" placeholder="Peserta" required>
+    <input type="text" id="anggaran" placeholder="Anggaran" required>
+
+    <button type="submit" class="btn-green">Buat</button>
+
+  </form>
+</section>
+
+<!-- Preview Template -->
+<section id="previewSection" class="preview hidden">
+  <h3>Preview Undangan</h3>
+  <div class="template-box" id="templateResult"></div>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
