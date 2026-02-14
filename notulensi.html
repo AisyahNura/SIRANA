@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Notulensi | SIRANA KEMBANG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">
+    <h3>SIRANA KEMBANG</h3>
+  </div>
+</nav>
+
+<section class="form-section">
+  <h2>Notulensi</h2>
+
+  <form id="notulensiForm">
+
+    <input type="text" id="kegiatan" placeholder="Kegiatan" required>
+    <input type="text" id="tempat" placeholder="Tempat" required>
+    <input type="text" id="peserta" placeholder="Peserta" required>
+
+    <div class="upload-box">
+      <p><strong>Upload file audio</strong></p>
+      <p>Max 60 minute</p>
+      <input type="file" id="audioFile" accept="audio/*">
+    </div>
+
+    <button type="submit" class="btn-green">Generate</button>
+
+  </form>
+</section>
+
+<section id="hasilNotulensi" class="preview hidden">
+  <h3>Hasil Notulensi</h3>
+  <div class="template-box" id="resultText"></div>
+</section>
+
+<script src="js/notulensi.js"></script>
+</body>
+</html>

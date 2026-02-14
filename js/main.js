@@ -1,24 +1,38 @@
 console.log("SIRANA KEMBANG ready");
 
-/// Login dummy
 const loginForm = document.getElementById("loginForm");
+
 if (loginForm) {
   loginForm.addEventListener("submit", function (e) {
     e.preventDefault();
-    window.location.href = "dashboard.html";
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const accounts = [
+      { email: "admin@sirana.com", password: "admin123", role: "admin" },
+      { email: "user@sirana.com", password: "user123", role: "user" }
+    ];
+
+    const foundUser = accounts.find(
+      acc => acc.email === email && acc.password === password
+    );
+
+    if (foundUser) {
+      localStorage.setItem("role", foundUser.role);
+
+      if (foundUser.role === "admin") {
+        window.location.href = "admin/dashboard.html";
+      } else {
+        window.location.href = "dashboard.html";
+      }
+    } else {
+      alert("Email atau password salah!");
+    }
   });
 }
 
 
-// Register dummy
-const registerForm = document.getElementById("registerForm");
-if (registerForm) {
-  registerForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    alert("Pendaftaran berhasil (dummy)");
-    window.location.href = "login.html";
-  });
-}
 const undanganForm = document.getElementById("undanganForm");
 
 if (undanganForm) {
@@ -75,5 +89,31 @@ if (undanganForm) {
 
     document.getElementById("templateResult").innerHTML = template;
     document.getElementById("previewSection").classList.remove("hidden");
+  });
+}
+const notulensiForm = document.getElementById("notulensiForm");
+
+if (notulensiForm) {
+  notulensiForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const kegiatan = document.getElementById("kegiatan").value;
+    const tempat = document.getElementById("tempat").value;
+    const peserta = document.getElementById("peserta").value;
+
+    const hasil = `
+NOTULENSI RAPAT
+
+Kegiatan : ${kegiatan}
+Tempat   : ${tempat}
+Peserta  : ${peserta}
+
+Ringkasan:
+Rapat membahas agenda utama dan evaluasi kegiatan sebelumnya.
+Disepakati tindak lanjut untuk minggu depan.
+    `;
+
+    document.getElementById("resultText").innerText = hasil;
+    document.getElementById("hasilNotulensi").classList.remove("hidden");
   });
 }

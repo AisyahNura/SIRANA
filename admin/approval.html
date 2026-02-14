@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>ACC Undangan | SIRANA KEMBANG</title>
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+<div class="admin-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">SIRANA KEMBANG</h2>
+    <p class="admin-text">Admin Panel</p>
+
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="approval.html" class="active">ACC Undangan</a>
+      <a href="monitoring.html">Monitoring</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+
+    <div class="header-row">
+      <h1>ACC Undangan</h1>
+      <input type="text" placeholder="Cari Undangan..." class="search-box">
+    </div>
+
+    <!-- MENUNGGU PERSETUJUAN -->
+    <div class="table-section">
+      <div class="section-title pending-title">Menunggu Persetujuan</div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Judul</th>
+            <th>Pembuat</th>
+            <th>Tanggal dibuat</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rapat Koordinasi Bulanan</td>
+            <td>Budi Santoso</td>
+            <td>2024-12-08</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td class="action">
+              👁️ ✔ ❌
+            </td>
+          </tr>
+
+          <tr>
+            <td>Rapat Olimpiade Madrasah</td>
+            <td>Ani Widya</td>
+            <td>2024-12-07</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td class="action">
+              👁️ ✔ ❌
+            </td>
+          </tr>
+
+          <tr>
+            <td>Undangan Revitalisasi BKM</td>
+            <td>Citra Dewi</td>
+            <td>2024-12-09</td>
+            <td><span class="badge pending">Pending</span></td>
+            <td class="action">
+              👁️ ✔ ❌
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SUDAH DISETUJUI -->
+    <div class="table-section">
+      <div class="section-title approved-title">Sudah disetujui</div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Judul</th>
+            <th>Pembuat</th>
+            <th>Tanggal dibuat</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rapat Evaluasi</td>
+            <td>Doni Prakoso</td>
+            <td>2024-12-06</td>
+            <td><span class="badge approved">Approved</span></td>
+            <td class="action">
+              👁️ ▶
+            </td>
+          </tr>
+
+          <tr>
+            <td>Seminar Nasional</td>
+            <td>Eko Wijaya</td>
+            <td>2024-12-06</td>
+            <td><span class="badge approved">Approved</span></td>
+            <td class="action">
+              👁️ ▶
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

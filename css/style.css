@@ -237,3 +237,16 @@ body {
 .template-box table {
   margin: 10px 0;
 }
+.upload-box {
+  border: 2px solid #7fbf90;
+  background: #dff3e6;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-box input {
+  margin-top: 10px;
+}
+
