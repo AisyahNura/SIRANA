@@ -2,28 +2,31 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monitoring Aktivitas | SIRANA KEMBANG</title>
   <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-
 <div class="admin-container">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h2 class="logo">SIRANA KEMBANG</h2>
-    <p class="admin-text">Admin Panel</p>
+    <div>
+      <h2 class="logo">SIRANA KEMBANG</h2>
+      <p class="admin-text">Admin Panel</p>
 
-    <nav>
-      <a href="dashboard.html">Dashboard</a>
-      <a href="approval.html">ACC Undangan</a>
-      <a href="monitoring.html" class="active">Monitoring</a>
-    </nav>
+      <nav class="sidebar-menu">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="approval.html">ACC Undangan</a>
+        <a href="monitoring.html" class="active">Monitoring</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <a href="../index.html" class="logout-btn">Logout</a>
+    </div>
   </aside>
 
-  <!-- MAIN CONTENT -->
   <main class="main-content">
-
     <div class="header-row">
       <h1>Monitoring Aktivitas</h1>
 
@@ -39,7 +42,6 @@
     </div>
 
     <div class="table-section">
-
       <table>
         <thead>
           <tr>
@@ -49,7 +51,6 @@
             <th>Tanggal</th>
           </tr>
         </thead>
-
         <tbody>
           <tr>
             <td>Doni Prakoso</td>
@@ -57,21 +58,18 @@
             <td>Rapat Koordinasi Bulanan</td>
             <td>2024-12-09</td>
           </tr>
-
           <tr>
             <td>Citra Dewi</td>
             <td><span class="badge notulensi">Notulensi</span></td>
             <td>Rapat Olimpiade Madrasah</td>
             <td>2024-11-27</td>
           </tr>
-
           <tr>
             <td>Ani Widya</td>
             <td><span class="badge undangan">Undangan</span></td>
             <td>Undangan Revitalisasi BKM</td>
             <td>2024-11-09</td>
           </tr>
-
           <tr>
             <td>Budi Santoso</td>
             <td><span class="badge undangan">Undangan</span></td>
@@ -79,14 +77,10 @@
             <td>2024-10-09</td>
           </tr>
         </tbody>
-
       </table>
-
     </div>
-
   </main>
 
 </div>
-
 </body>
 </html>

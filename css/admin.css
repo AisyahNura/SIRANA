@@ -1,5 +1,9 @@
 /* ATEMIN */
 /* RESET */
+body {
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,11 +21,37 @@
 /* SIDEBAR */
 .sidebar {
   width: 240px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   background: #ffffff;
   padding: 25px 20px;
   border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar-bottom {
+  margin-top: 30px;
 }
 
+.logout-btn {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #d32f2f;
+  background: #fdeaea;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #f8d7da;
+  color: #b71c1c;
+}
 .logo {
   color: #2e7d32;
   margin-bottom: 5px;
@@ -57,6 +87,7 @@
 /* MAIN */
 .main-content {
   flex: 1;
+  margin-left: 240px;
   padding: 35px;
 }
 

@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Admin | SIRANA KEMBANG</title>
   <link rel="stylesheet" href="../css/admin.css">
 </head>
@@ -11,14 +12,21 @@
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h2 class="logo">SIRANA KEMBANG</h2>
-    <p class="admin-text">Admin Panel</p>
+    <div>
+      <h2 class="logo">SIRANA KEMBANG</h2>
+      <p class="admin-text">Admin Panel</p>
 
-    <nav>
-      <a href="dashboard.html" class="active">Dashboard</a>
-  <a href="approval.html">ACC Undangan</a>
-  <a href="monitoring.html">Monitoring</a>
-    </nav>
+      <nav class="sidebar-menu">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="approval.html">ACC Undangan</a>
+        <a href="monitoring.html">Monitoring</a>
+      </nav>
+    </div>
+
+    <!-- LOGOUT PALING BAWAH -->
+    <div class="sidebar-bottom">
+      <a href="../index.html" class="logout-btn">Logout</a>
+    </div>
   </aside>
 
   <!-- MAIN CONTENT -->
@@ -80,7 +88,6 @@
       </div>
 
     </div>
-
   </main>
 
 </div>
