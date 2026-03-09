@@ -2,44 +2,77 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buat Undangan | SIRANA KEMBANG</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="logo">
-    <h3>SIRANA KEMBANG</h3>
-  </div>
-</nav>
-
-<section class="form-section">
-  <h2>Buat Undangan</h2>
-
-  <form id="undanganForm">
-
-    <input type="text" id="kegiatan" placeholder="Kegiatan" required>
-    <input type="text" id="tempat" placeholder="Tempat" required>
-
-    <div class="row">
-      <input type="date" id="tanggal" required>
-      <input type="time" id="waktu" required>
+  <nav class="navbar">
+    <div class="logo">
+      <h3>SIRANA KEMBANG</h3>
+      <small>Sistem Informasi Rapat dan Agenda</small>
     </div>
 
-    <input type="text" id="peserta" placeholder="Peserta" required>
-    <input type="text" id="anggaran" placeholder="Anggaran" required>
+    <div class="nav-right">
+      <a href="dashboard.html" class="nav-item">
+        <span class="icon">⬅️</span>
+        <span class="nav-text">Kembali ke Dashboard</span>
+      </a>
+    </div>
+  </nav>
 
-    <button type="submit" class="btn-green">Buat</button>
+  <section class="dashboard-header">
+    <h2>Buat Undangan</h2>
+    <p>Lengkapi data rapat untuk membuat undangan resmi secara otomatis.</p>
+  </section>
 
-  </form>
-</section>
+  <section class="form-section">
+    <div class="form-card">
+      <h3>Form Data Undangan</h3>
 
-<!-- Preview Template -->
-<section id="previewSection" class="preview hidden">
-  <h3>Preview Undangan</h3>
-  <div class="template-box" id="templateResult"></div>
-</section>
+      <form id="undanganForm">
 
-<script src="js/main.js"></script>
+        <label for="kegiatan">Nama Kegiatan</label>
+        <input type="text" id="kegiatan" placeholder="Masukkan nama kegiatan" required>
+
+        <label for="tempat">Tempat</label>
+        <input type="text" id="tempat" placeholder="Masukkan lokasi kegiatan" required>
+
+        <div class="row">
+          <div class="input-group">
+            <label for="tanggal">Tanggal</label>
+            <input type="date" id="tanggal" required>
+          </div>
+
+          <div class="input-group">
+            <label for="waktu">Waktu</label>
+            <input type="time" id="waktu" required>
+          </div>
+        </div>
+
+        <label for="peserta">Peserta</label>
+        <input type="text" id="peserta" placeholder="Contoh: Kepala Madrasah, Staf TU, dll" required>
+
+        <label for="anggaran">Anggaran</label>
+        <input type="text" id="anggaran" placeholder="Masukkan anggaran kegiatan" required>
+
+        <button type="submit" class="btn-green">Buat Undangan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Preview Template -->
+  <section id="previewSection" class="preview hidden">
+    <div class="preview-card">
+      <div class="preview-header">
+        <h3>Preview Undangan</h3>
+        <p>Hasil undangan akan ditampilkan di bawah ini.</p>
+      </div>
+      <div class="template-box" id="templateResult"></div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
